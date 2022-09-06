@@ -187,10 +187,10 @@ if (btnFilterbyunit):
     #data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
     #return data
 
-#data_load_state = st.text('Loading data...')
-#data = load_data(500)
-#data_load_state.text("Done! (using st.cache)")
-#st.dataframe(data)
+data_load_state = st.text('Loading data...')
+data = load_data(500)
+data_load_state.text("Done! (using st.cache)")
+st.dataframe(data)
 
 if st.sidebar.checkbox("Edad empleados "):
     st.subheader("Empleados agrupados por edad")
